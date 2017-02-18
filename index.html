@@ -264,7 +264,11 @@
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
-    })
+    });
+    $('.dropdown').on('mouseenter mouseleave click tap', function() {
+    $(this).toggleClass("open");
+    });
+
     </script>
 
 </body>
